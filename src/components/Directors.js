@@ -3,9 +3,19 @@ import { directors } from '../data';
 
 const Directors = () => {
   return (
-    <div>
-      {/*{code here}*/}
-    </div>
+    <>
+     <h1>Directors Page</h1>
+     {directors.map((ele) => (
+         <div>
+             <p>Name: {ele.name}</p>
+             <ul>
+                 {ele.movies.map((e) => (
+                     <li >{e}</li>
+                 ))}
+             </ul>
+         </div>
+     ))}
+    </>
   );
 }
 
