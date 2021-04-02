@@ -3,7 +3,7 @@ import { movies } from '../data';
 
 const Movies = () => {
   return (
-    <>
+    <div>
         <h1>Movies Page</h1>
       {movies.map((ele) => (
           <div >
@@ -16,7 +16,7 @@ const Movies = () => {
               </ul>
           </div>
       ))}
-    </>
+    </div>
   );
 };
 
